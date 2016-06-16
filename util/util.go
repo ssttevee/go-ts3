@@ -43,7 +43,7 @@ func Escape(s string) string {
 	return escaper.Replace(s)
 }
 
-// Unescape will unescape the string acording to TeamSpeak's Server Query specs
+// Unescape will unescape the string according to TeamSpeak's Server Query specs
 func Unescape(s string) string {
 	return unescaper.Replace(s)
 }

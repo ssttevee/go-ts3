@@ -6,9 +6,9 @@ import (
 )
 
 type ServerList struct {
-	UniqueId bool // whether or not to return the unique id
-	Short bool // Only return server id, port, and status (Overrides UniqueId)
-	All bool // List all servers in the database, including those of which that are not associated which the current machine
+	UniqueId    bool // whether or not to return the unique id
+	Short       bool // Only return server id, port, and status (Overrides UniqueId)
+	All         bool // List all servers in the database, including those of which that are not associated which the current machine
 	OnlyOffline bool // Only include servers whose status is offline
 }
 
@@ -67,7 +67,7 @@ func (this Use) Command() string {
 }
 
 type ServerCreate struct {
-	Name string                  // Name of the new server
+	Name       string            // Name of the new server
 	Properties map[string]string // Properties for the new server
 }
 
@@ -113,8 +113,8 @@ func (this ServerGroupAdd) Command() string {
 }
 
 type ServerGroupDelete struct {
-	Id string  // The id of the server group to delete
-	Force bool // Force the server group to be delete even while there are clients within
+	Id    string // The id of the server group to delete
+	Force bool   // Force the server group to be delete even while there are clients within
 }
 
 func (this ServerGroupDelete) Command() string {

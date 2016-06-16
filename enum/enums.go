@@ -96,9 +96,9 @@ type NoticeType string
 
 const (
 	// server events
-	NoticeTypeServerEdit               NoticeType = "notifyserveredited"              // On Server Edited
-	NoticeTypeClientConnect            NoticeType = "notifycliententerview"           // On Client Join Server
-	NoticeTypeClientDisconnect         NoticeType = "notifyclientleftview"            // On Client Leave Server
+	NoticeTypeServerEdit       NoticeType = "notifyserveredited"    // On Server Edited
+	NoticeTypeClientConnect    NoticeType = "notifycliententerview" // On Client Join Server
+	NoticeTypeClientDisconnect NoticeType = "notifyclientleftview"  // On Client Leave Server
 
 	// channel events
 	NoticeTypeClientMove               NoticeType = "notifyclientmoved"               // On Client Change Channel
@@ -110,10 +110,10 @@ const (
 	NoticeTypeChannelDelete            NoticeType = "notifychanneldeleted"            // On Channel Deletion
 
 	// text event
-	NoticeTypeTextMessage              NoticeType = "notifytextmessage"               // On Receive Text Message
-	NoticeTypePrivateTextMessage       NoticeType = "notifyprivatetextmessage"        // On Receive Text Message
-	NoticeTypeChannelTextMessage       NoticeType = "notifychanneltextmessage"        // On Receive Text Message
-	NoticeTypeServerTextMessage        NoticeType = "notifyservertextmessage"         // On Receive Text Message
+	NoticeTypeTextMessage        NoticeType = "notifytextmessage"        // On Receive Text Message
+	NoticeTypePrivateTextMessage NoticeType = "notifyprivatetextmessage" // On Receive Text Message
+	NoticeTypeChannelTextMessage NoticeType = "notifychanneltextmessage" // On Receive Text Message
+	NoticeTypeServerTextMessage  NoticeType = "notifyservertextmessage"  // On Receive Text Message
 )
 
 func (t NoticeType) NotifyEvent() NotifyEvent {

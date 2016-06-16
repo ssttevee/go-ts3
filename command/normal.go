@@ -3,8 +3,8 @@ package ts3command
 
 import (
 	"fmt"
-	"github.com/ssttevee/go-ts3/util"
 	"github.com/ssttevee/go-ts3/enum"
+	"github.com/ssttevee/go-ts3/util"
 )
 
 func Login(username, password string) SimpleCommand {

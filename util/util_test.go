@@ -1,8 +1,8 @@
 package ts3util_test
 
 import (
-	"testing"
 	"github.com/ssttevee/go-ts3/util"
+	"testing"
 )
 
 func TestEscape(t *testing.T) {

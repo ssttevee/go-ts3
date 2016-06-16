@@ -16,15 +16,15 @@ func ServerIdGetByPort(port string) SimpleCommand {
 }
 
 func ServerDelete(serverId string) SimpleCommand {
-	return SimpleCommand(fmt.Sprintf("serverdelete sid=%d", serverId))
+	return SimpleCommand(fmt.Sprintf("serverdelete sid=%s", serverId))
 }
 
 func ServerStart(serverId string) SimpleCommand {
-	return SimpleCommand(fmt.Sprintf("serverstart sid=%d", serverId))
+	return SimpleCommand(fmt.Sprintf("serverstart sid=%s", serverId))
 }
 
 func ServerStop(serverId string) SimpleCommand {
-	return SimpleCommand(fmt.Sprintf("serverstop sid=%d", serverId))
+	return SimpleCommand(fmt.Sprintf("serverstop sid=%s", serverId))
 }
 
 func SendTextMessage(targetMode ts3enum.TextMessageTargetMode, target, message string) SimpleCommand {
